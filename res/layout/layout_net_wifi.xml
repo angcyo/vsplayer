@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/WmHm"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ds_little">
+
+        <TextView
+            style="@style/WwHw"
+            android:layout_marginLeft="@dimen/ds_little"
+            android:layout_marginTop="@dimen/ds_little"
+            android:text="选择wifi"
+            android:textColor="@color/col_white"
+            android:textSize="@dimen/ds_content_title_tx_size"/>
+
+        <ProgressBar
+            android:id="@+id/id_net_wifi_load_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/id_net_wifi_list"
+        style="@style/WmHw"
+        android:layout_margin="@dimen/ds_little"
+        android:cacheColorHint="@color/col_tran"
+        android:divider="@null"
+        android:nextFocusDown="@id/id_net_wifi_list"
+        android:nextFocusUp="@id/id_net_wifi_list"
+        ></ListView>
+
+    <!--    <TextView
+        android:id="@+id/id_net_wifi_tip"
+        style="@style/WmHw"
+        android:layout_marginLeft="@dimen/ds_little"
+        android:layout_marginTop="@dimen/ds_little"
+        android:text="WIFI状态"
+        android:textSize="@dimen/ds_content_title_tx_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        style="@style/WwHw"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/ds_mid"
+        android:background="@drawable/normal_bt_selector"
+        android:text="保存"
+        android:textColor="@drawable/normal_tx_selector" />
+-->
+
+</LinearLayout>

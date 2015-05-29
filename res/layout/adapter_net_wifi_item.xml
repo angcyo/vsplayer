@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/WmHw"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/normal_bt_selector"
+        android:orientation="horizontal"
+        android:padding="@dimen/ds_mid">
+
+        <TextView
+            android:id="@+id/id_net_wifi_ssid"
+            style="@style/WwHw"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="SSID"
+            android:textColor="@color/col_white"
+            android:textSize="@dimen/ds_content_content_tx_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/id_net_wifi_state"
+            style="@style/WwHw"
+            android:layout_marginRight="@dimen/ds_mid"
+            android:singleLine="true"
+            android:text="已连接"
+            android:textColor="@color/col_white"
+            android:textSize="@dimen/ds_content_content_tx_size"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/id_net_wifi_level_img"
+                style="@style/WmHm"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_wifi_level_0"/>
+
+            <ImageView
+                android:id="@+id/id_net_wifi_lock_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_wifi_lock"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

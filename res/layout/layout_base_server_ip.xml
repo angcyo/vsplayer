@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/WmHw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="请输入要设置的IP地址"
+        android:textColor="@color/col_content_title"
+        android:textSize="@dimen/ds_content_title_tx_size" />
+
+    <com.zckj.ui.IPEditText
+        android:id="@+id/id_server_edit_ip"
+        style="@style/WmHw" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/id_server_ip_ok"
+        style="@style/WwHw"
+        android:layout_gravity="right"
+        android:padding="@dimen/ds_little"
+        android:layout_margin="@dimen/ds_little"
+        android:background="@drawable/normal_bt_selector"
+        android:text="保存"
+        android:nextFocusDown="@id/ip_first"
+        android:nextFocusUp="@id/ip_first"
+        android:textSize="@dimen/ds_normal_text_size"
+        android:textColor="@drawable/text_col_selector" />
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="DialogNoTitle" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SetButtonStyle">
+        <item name="android:layout_width">@dimen/ds_setting_button_size</item>
+        <item name="android:layout_height">@dimen/ds_setting_button_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/ds_mid</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/ds_text_normal_size</item>
+        <item name="android:background">@drawable/normal_bt_selector</item>
+        <item name="android:textColor">@color/col_menu_content</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:background">@drawable/menu_radio_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ds_menu_item_tx_size</item>
+        <item name="android:textColor">@color/col_menu_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/ds_little</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="RadioButtonNormalStyle" parent="WmHw">
+        <item name="android:background">@drawable/normal_rb_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ds_menu_item_tx_size</item>
+        <item name="android:textColor">@drawable/normal_rb_tx_selector</item>
+        <item name="android:padding">@dimen/ds_mid</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RadioButtonRotateStyle">
+        <item name="android:layout_width">400dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/ds_mid</item>
+        <item name="android:layout_margin">@dimen/ds_mid</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size</item>
+        <item name="android:textColor">@color/col_white</item>
+        <item name="android:background">@drawable/menu_radio_selector</item>
+    </style>
+
+    <style name="IPEditStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/normal_ipedit_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textColor">@color/col_white</item>
+        <item name="android:text">0</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size_little</item>
+    </style>
+
+    <style name="IPTextPointStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/point</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size_little</item>
+        <item name="android:textColor">@color/col_white</item>
+    </style>
+
+    <style name="WmHw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LinearRow" parent="WmHw">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">@dimen/ds_little</item>
+    </style>
+
+    <style name="WwHw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WmHm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WwHm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="BtStyle">
+        <item name="android:textSize">@dimen/ds_normal_text_size_little</item>
+        <item name="android:textColor">@drawable/text_col_selector</item>
+        <item name="android:padding">@dimen/ds_little</item>
+        <item name="android:background">@drawable/normal_bt_selector</item>
+    </style>
+
+    <style name="ExRotateButton" parent="WwHw">
+        <item name="android:background">@drawable/normal_bt_selector</item>
+        <item name="android:drawablePadding">@dimen/ds_mid</item>
+        <item name="android:layout_margin">@dimen/ds_mid</item>
+        <item name="android:padding">@dimen/ds_mid</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/col_menu_bg</item>
+        <item name="android:windowEnterAnimation">@anim/tran_ttb_enter_frag</item>
+        <item name="android:windowExitAnimation">@anim/tran_ttb_exit_frag</item>
+        <!--
+       <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        &lt;!&ndash; 模糊 &ndash;&gt;
+        <item name="android:backgroundDimAmount">0.6</item>-->
+    </style>
+
+    <style name="IncrementBtStyle" parent="WwHw">
+        <item name="android:background">@drawable/normal_bt_selector</item>
+        <item name="android:textColor">@color/col_white</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:layout_margin">@dimen/ds_mid</item>
+        <item name="android:layout_width">@dimen/ds_increment_bt_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="IncrementBtLittleStyle" parent="WwHw">
+        <item name="android:background">@drawable/normal_bt_selector</item>
+        <item name="android:textColor">@color/col_white</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size_little</item>
+        <item name="android:layout_marginLeft">@dimen/ds_mid</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DefaultSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/DefaultIndicatorTextAppearance</item>
+        <item name="dsb_progressColor">@color/dsb_progress_color</item>
+        <item name="dsb_trackColor">@color/dsb_track_color</item>
+        <item name="dsb_rippleColor">@color/dsb_ripple_color_pressed</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="DefaultIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@color/col_white</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="AddTaskCheckBoxStyle" parent="WwHw">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/add_task_check_bt_selector</item>
+        <item name="android:textColor">@color/col_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/ds_period_cb_size</item>
+        <item name="android:layout_height">@dimen/ds_period_cb_size</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size_little</item>
+        <item name="android:layout_marginLeft">@dimen/ds_little</item>
+    </style>
+
+    <style name="TextViewWifiTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/col_menu_title</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size</item>
+    </style>
+    <style name="TextViewWifiContent" parent="TextViewWifiTitle">
+        <item name="android:textColor">@color/col_menu_content</item>
+        <item name="android:textSize">@dimen/ds_normal_text_size_little</item>
+    </style>
+</resources>

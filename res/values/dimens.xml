@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="ds_setting_button_size">200dp</dimen>
+    <dimen name="ds_text_normal_size">25sp</dimen>
+    <dimen name="ds_mid">20dp</dimen>
+    <dimen name="ds_content_title_tx_size">50sp</dimen>
+    <dimen name="ds_little">10dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ds_setting_menu_height">80dp</dimen>
+    <dimen name="ds_menu_title_tx_size">60sp</dimen>
+    <dimen name="ds_menu_content_tx_size">40sp</dimen>
+    <dimen name="ds_content_content_tx_size">40sp</dimen>
+    <dimen name="ds_menu_item_tx_size">40sp</dimen>
+    <dimen name="ds_big">50dp</dimen>
+    <dimen name="ds_font_size">15dp</dimen>
+
+    <dimen name="diameter">60dp</dimen>
+
+    <dimen name="ds_border_size">2dp</dimen>
+
+    <dimen name="ds_normal_text_size">40sp</dimen>
+    <dimen name="ds_normal_text_size_little">25sp</dimen>
+
+    <dimen name="ds_increment_bt_size">120dp</dimen>
+    <dimen name="ds_number_picker_width">40dp</dimen>
+
+    <dimen name="ds_period_cb_size">50dp</dimen>
+
+    <dimen name="ds_ipeditview_width">300dp</dimen>
+
+    <dimen name="ds_padding_3">3dp</dimen>
+    <dimen name="ds_path_level_padding">40dp</dimen>
+</resources>

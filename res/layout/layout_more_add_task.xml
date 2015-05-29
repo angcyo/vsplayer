@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/WmHm"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/WmHw"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/ds_little">
+
+        <TextView
+            style="@style/WwHw"
+            android:text="任务类型:"
+            android:textSize="@dimen/ds_text_normal_size"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkedButton="@+id/id_rb_task_type_volume"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_rb_task_type_volume"
+                style="@style/WwHw"
+                android:layout_marginLeft="@dimen/ds_mid"
+                android:layout_marginRight="@dimen/ds_mid"
+                android:text="定时音量"
+                android:textColor="@drawable/normal_menu_rb_tx_selector"/>
+
+            <RadioButton
+                android:id="@+id/id_rb_task_type_shutdown"
+                style="@style/WwHw"
+                android:layout_marginLeft="@dimen/ds_mid"
+                android:layout_marginRight="@dimen/ds_mid"
+                android:text="定时开关机"
+                android:textColor="@drawable/normal_menu_rb_tx_selector"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/WmHw"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/ds_little">
+
+        <TextView
+            style="@style/WwHw"
+            android:text="触发时间:"
+            android:textSize="@dimen/ds_text_normal_size"/>
+
+        <com.zckj.ui.TimePicker style="@style/WwHw"></com.zckj.ui.TimePicker>
+
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            style="@style/WwHw"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/ds_little"
+            android:orientation="horizontal"
+            style="@style/WwHw">
+
+            <TextView
+                android:text="版本代号:"
+                android:textSize="@dimen/ds_text_normal_size"
+                style="@style/WwHw"/>
+
+            <TextView
+                android:id="@+id/id_apk_ver_code"
+                android:textSize="@dimen/ds_text_normal_size"
+                style="@style/WwHw"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/ds_little"
+            style="@style/WwHw">
+
+            <TextView
+                android:text="版本名称:"
+                android:textSize="@dimen/ds_text_normal_size"
+                style="@style/WwHw"/>
+
+            <TextView
+                android:id="@+id/id_apk_ver_name"
+                android:textSize="@dimen/ds_text_normal_size"
+                style="@style/WwHw"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/WwHw"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/ds_mid"
+        android:background="@drawable/normal_bt_selector"
+        android:text="保存"
+        android:textColor="@drawable/normal_tx_selector"/>-->
+
+</LinearLayout>

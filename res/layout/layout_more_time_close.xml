@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/WmHm"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/WmHw"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/WwHw"
+            android:layout_marginLeft="@dimen/ds_little"
+            android:layout_marginTop="@dimen/ds_little"
+            android:text="设置定时开/关机"
+            android:textColor="@color/col_white"
+            android:textSize="@dimen/ds_content_title_tx_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_more_add_task_shutdown"
+        style="@style/WwHw"
+        android:text="添加任务"
+        android:layout_margin="@dimen/ds_little"
+        android:textSize="@dimen/ds_normal_text_size"
+        android:textColor="@color/col_white"
+        android:padding="@dimen/ds_little"
+        android:background="@drawable/normal_bt_selector"/>
+
+    <RelativeLayout
+        android:id="@+id/id_more_layout_empty_shutdown"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            style="@style/WwHw"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_task_empty"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/id_more_list_task_shutdown"
+        android:divider="@null"
+        android:cacheColorHint="@color/col_tran"
+        android:layout_margin="@dimen/ds_little"
+        style="@style/WmHw"
+        android:nextFocusUp="@id/id_more_add_task_shutdown"
+        android:nextFocusDown="@id/id_more_add_task_shutdown"
+        ></ListView>
+
+    <!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        style="@style/WwHw"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/ds_mid"
+        android:background="@drawable/normal_bt_selector"
+        android:text="保存"
+        android:textColor="@drawable/normal_tx_selector" />-->
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="col_text">#ffffff</color>
+    <color name="col_view_press">#037ea8</color>
+    <color name="col_view_focus">#274e5d</color>
+    <color name="col_tran">#00000000</color>
+    <color name="col_content_bg">#212222</color>
+    <color name="col_menu_tx">#757575</color>
+    <color name="col_content_tx">#2E2E2E</color>
+    <color name="col_menu_bottom">#272d33</color>
+    <color name="col_menu_top">#030304</color>
+
+
+    <color name="col_white">#F2F2F2</color>
+    <color name="col_gray">#CCCCCC</color>
+    <color name="col_black">#AAAAAA</color>
+    <color name="col_theme">#5C99B6</color>
+    <color name="col_tx_focus">#DDEEEEEE</color>
+    <color name="col_theme_tran">#805C99B6</color>
+    <color name="col_theme_focus">#205C99B6</color>
+    <color name="col_border_focus">#2c7a96</color>
+    <color name="col_view_bg_focus">#274e5d</color>
+    <color name="col_menu_title">#bebebe</color>
+    <color name="col_menu_content">#ffffff</color>
+    <color name="col_content_title">#bebebe</color>
+    <color name="col_content_content">#ffffff</color>
+    <color name="col_menu_bg">#F6F6F6</color>
+    <color name="col_content_bg_x">#212222</color>
+    <color name="col_view_press_tran">#50037ea8</color>
+    <color name="col_menu_bg_focus">#ECECEC</color>
+    <color name="col_menu_split">#EEEEEE</color>
+    <color name="col_content_tx_sub">#999999</color>
+    <color name="col_content_split">#D0D0D0</color>
+    <color name="col_content_split_x">#424243</color>
+    <color name="col_menu_split_x">#444749</color>
+
+    <!--<color name="theme_green">#32be6c</color>-->
+    <color name="theme_green">#5C99B6</color>
+    <color name="divider">#eeeeee</color>
+
+    <color name="dsb_progress_color">#ff5C99B6</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#ff5C99B6</color>
+    <color name="dsb_ripple_color_pressed">#775C99B6</color>
+    <color name="dsb_ripple_color_focused">#995C99B6</color>
+</resources>

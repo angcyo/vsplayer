@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/WmHw"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/normal_bt_selector"
+        android:padding="@dimen/ds_mid"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/WmHw"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_tx_task_time"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/col_white"
+                android:textSize="@dimen/ds_normal_text_size"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/id_tx_volume_value"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/img_volume"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/ds_big"
+                android:textColor="@color/col_white"
+                android:textSize="@dimen/ds_normal_text_size"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/id_tx_task_state"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/col_white"
+                android:textSize="@dimen/ds_normal_text_size"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_tx_period"
+            android:layout_width="match_parent"
+            android:textColor="@color/col_white"
+            android:textSize="@dimen/ds_normal_text_size_little"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@color/col_content_split_x"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

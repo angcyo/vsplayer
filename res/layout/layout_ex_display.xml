@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/WmHm"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/WmHw"
+        android:layout_marginLeft="@dimen/ds_little"
+        android:layout_marginTop="@dimen/ds_little"
+        android:text="旋转方向"
+        android:textColor="@color/col_white"
+        android:textSize="@dimen/ds_content_title_tx_size"/>
+
+    <!--<LinearLayout
+        style="@style/WwHm"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/id_ex_rotate_left"
+            style="@style/ExRotateButton"
+            android:drawableLeft="@drawable/img_rotate_left"
+            android:textColor="@drawable/normal_tx_selector"
+            android:text="向左旋转90°"/>
+
+        <Button
+            android:id="@+id/id_ex_rotate_right"
+            style="@style/ExRotateButton"
+            android:drawableRight="@drawable/img_rotate_right"
+            android:textColor="@drawable/normal_tx_selector"
+            android:text="向右旋转90°"/>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <RadioGroup
+            android:id="@+id/id_ex_rotate_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/id_ex_rb_rotate_0"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/ds_big">
+
+            <RadioButton
+                android:id="@+id/id_ex_rb_rotate_0"
+                style="@style/RadioButtonRotateStyle"
+                android:drawableLeft="@drawable/check_selector"
+                 android:drawablePadding="@dimen/ds_mid"
+                android:nextFocusUp="@+id/id_ex_rb_rotate_270"
+                android:text="旋转0°"/>
+
+            <RadioButton
+                android:id="@+id/id_ex_rb_rotate_90"
+                android:drawableLeft="@drawable/check_selector"
+                 android:drawablePadding="@dimen/ds_mid"
+                style="@style/RadioButtonRotateStyle"
+                android:text="旋转90°"/>
+
+            <RadioButton
+                android:id="@+id/id_ex_rb_rotate_180"
+                android:drawableLeft="@drawable/check_selector"
+                 android:drawablePadding="@dimen/ds_mid"
+                style="@style/RadioButtonRotateStyle"
+                android:text="旋转180°"/>
+
+            <RadioButton
+                android:id="@+id/id_ex_rb_rotate_270"
+                android:drawableLeft="@drawable/check_selector"
+                android:drawablePadding="@dimen/ds_mid"
+                style="@style/RadioButtonRotateStyle"
+                android:nextFocusDown="@+id/id_ex_rb_rotate_0"
+                android:text="旋转270°"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--
+        <Button
+            style="@style/WwHw"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/ds_mid"
+            android:background="@drawable/normal_bt_selector"
+            android:text="保存"
+            android:textColor="@drawable/normal_tx_selector"/>-->
+
+</LinearLayout>

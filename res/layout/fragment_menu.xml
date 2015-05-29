@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_tx_menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="菜单标题"
+        android:textColor="@color/col_menu_title"
+        android:textSize="@dimen/ds_menu_title_tx_size"/>
+
+    <RadioGroup
+        android:id="@+id/id_rb_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+</LinearLayout>

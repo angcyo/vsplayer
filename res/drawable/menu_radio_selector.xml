@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/col_view_press" android:state_pressed="true"/>
+
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="3dp"></corners>
+
+            <stroke android:width="2dp" android:color="@color/col_view_press"></stroke>
+            <solid android:color="@color/col_view_focus" />
+        </shape>
+    </item>
+
+    <item android:drawable="@color/col_view_press" android:state_checked="true"/>
+    <item android:drawable="@color/col_tran" android:state_checked="false"></item>
+
+</selector>

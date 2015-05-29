@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/col_view_bg_focus"
+                android:useLevel="false"/>
+            <size android:width="@dimen/ds_period_cb_size"
+                  android:height="@dimen/ds_period_cb_size"/>
+            <stroke
+                android:width="3dp"
+                android:color="@color/col_view_bg_focus"/>
+        </shape>
+
+    </item>
+
+    <item android:state_checked="true">
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/col_view_press"
+                android:useLevel="false"/>
+            <size android:width="@dimen/ds_period_cb_size"
+                  android:height="@dimen/ds_period_cb_size"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/col_tran"
+                android:useLevel="false"/>
+            <size
+                android:width="@dimen/ds_period_cb_size"
+                android:height="@dimen/ds_period_cb_size"/>
+        </shape>
+
+    </item>
+
+</selector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/normal_et_bg_selector"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <EditText
+        android:id="@+id/ip_first"
+        style="@style/IPEditStyle"
+        android:nextFocusDown="@+id/id_server_ip_ok"
+        android:nextFocusUp="@id/id_server_ip_ok" />
+
+    <TextView style="@style/IPTextPointStyle" />
+
+    <EditText
+        android:id="@+id/ip_second"
+        style="@style/IPEditStyle"
+        android:nextFocusDown="@id/id_server_ip_ok"
+        android:nextFocusUp="@id/id_server_ip_ok" />
+
+    <TextView style="@style/IPTextPointStyle" />
+
+    <EditText
+        android:id="@+id/ip_third"
+        style="@style/IPEditStyle"
+        android:nextFocusDown="@id/id_server_ip_ok"
+        android:nextFocusUp="@id/id_server_ip_ok" />
+
+    <TextView style="@style/IPTextPointStyle" />
+
+    <EditText
+        android:id="@+id/ip_fourth"
+        style="@style/IPEditStyle"
+        android:nextFocusDown="@id/id_server_ip_ok"
+        android:nextFocusUp="@id/id_server_ip_ok" />
+
+</LinearLayout>

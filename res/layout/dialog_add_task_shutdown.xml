@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/ds_mid"
+    android:layout_width="wrap_content"
+    android:background="@color/col_content_bg_x"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        style="@style/WwHw">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/LinearRow">
+
+                <TextView
+                    style="@style/WwHw"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/col_white"
+                    android:textSize="@dimen/ds_normal_text_size"
+                    android:text="触发时间:"/>
+
+                <LinearLayout
+                    style="@style/WwHw"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/id_bt_volume_hour_add"
+                        android:text="+"
+                        style="@style/IncrementBtStyle"/>
+
+                    <Button
+                        android:id="@+id/id_bt_volume_hour_minus"
+                        android:text="-"
+                        style="@style/IncrementBtStyle"/>
+                </LinearLayout>
+
+                <com.zckj.ui.TimePicker
+                    android:id="@+id/id_task_volume_timepicker"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    style="@style/WwHw"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/id_bt_volume_minute_add"
+                        android:text="+"
+                        style="@style/IncrementBtStyle"/>
+
+                    <Button
+                        android:id="@+id/id_bt_volume_minute_minus"
+                        android:text="-"
+                        style="@style/IncrementBtStyle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LinearRow"
+                >
+
+                <TextView
+                    style="@style/WwHw"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/col_white"
+                    android:textSize="@dimen/ds_normal_text_size"
+                    android:text="目标类型:"/>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checkedButton="@+id/id_rb_task_type_close"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/id_rb_task_type_close"
+                        style="@style/WwHw"
+                        android:layout_marginLeft="@dimen/ds_mid"
+                        android:layout_marginRight="@dimen/ds_mid"
+                        android:text="定时关机"
+                        android:textSize="@dimen/ds_normal_text_size"
+                        android:textColor="@drawable/normal_menu_rb_tx_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_task_type_start"
+                        style="@style/WwHw"
+                        android:layout_marginLeft="@dimen/ds_mid"
+                        android:layout_marginRight="@dimen/ds_mid"
+                        android:text="定时开机"
+                        android:textSize="@dimen/ds_normal_text_size"
+                        android:textColor="@drawable/normal_menu_rb_tx_selector"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearRow"
+                >
+
+                <TextView
+                    style="@style/WwHw"
+                    android:layout_marginRight="@dimen/ds_mid"
+                    android:textColor="@color/col_white"
+                    android:textSize="@dimen/ds_normal_text_size"
+                    android:text="任务周期:"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period1"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="一"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period2"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="二"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period3"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="三"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period4"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="四"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period5"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="五"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period6"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="六"/>
+
+                <CheckBox
+                    android:id="@+id/id_cb_volume_period7"
+                    style="@style/AddTaskCheckBoxStyle"
+                    android:text="日"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/ds_mid"
+        style="@style/LinearRow">
+
+        <Button
+            android:id="@+id/id_bt_volume_ok_and_con"
+            android:text="添加并继续"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/normal_bt_selector"
+            android:textColor="@color/col_white"
+            android:padding="@dimen/ds_mid"
+            android:textSize="@dimen/ds_normal_text_size_little"
+            style="@style/WwHw"/>
+
+        <Button
+            android:id="@+id/id_bt_volume_ok"
+            android:text="添加"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/normal_bt_selector"
+            android:textColor="@color/col_white"
+            android:padding="@dimen/ds_mid"
+            android:textSize="@dimen/ds_normal_text_size_little"
+            style="@style/WwHw"/>
+
+        <Button
+            android:id="@+id/id_bt_volume_cancel"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/normal_bt_selector"
+            android:textColor="@color/col_white"
+            android:padding="@dimen/ds_mid"
+            android:textSize="@dimen/ds_normal_text_size_little"
+            style="@style/WwHw"/>
+    </RelativeLayout>
+</LinearLayout>

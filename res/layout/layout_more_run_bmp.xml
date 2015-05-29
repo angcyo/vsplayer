@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/WmHm"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/WmHw"
+        android:layout_marginLeft="@dimen/ds_little"
+        android:layout_marginTop="@dimen/ds_little"
+        android:text="设置启动背景"
+        android:textColor="@color/col_white"
+        android:textSize="@dimen/ds_normal_text_size"/>
+
+    <ImageView
+        android:id="@+id/id_more_img_run_bmp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/ds_mid"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo"/>
+
+
+    <LinearLayout
+        style="@style/WmHw"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/id_more_browse_bmp"
+            style="@style/WwHw"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="@dimen/ds_mid"
+            android:background="@drawable/normal_bt_selector"
+            android:padding="@dimen/ds_little"
+            android:text="浏览"
+            android:nextFocusDown="@+id/id_more_run_bmp_ok"
+            android:nextFocusUp="@+id/id_more_run_bmp_ok"
+            android:textColor="@drawable/text_col_selector"
+            android:textSize="@dimen/ds_normal_text_size"/>
+
+
+
+        <Button
+            android:id="@+id/id_more_run_bmp_ok"
+            style="@style/WwHw"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="@dimen/ds_mid"
+            android:background="@drawable/normal_bt_selector"
+            android:padding="@dimen/ds_little"
+            android:text="保存"
+            android:textColor="@drawable/text_col_selector"
+            android:nextFocusUp="@id/id_more_browse_bmp"
+            android:nextFocusDown="@id/id_more_browse_bmp"
+            android:textSize="@dimen/ds_normal_text_size"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

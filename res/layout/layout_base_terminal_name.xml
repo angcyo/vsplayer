@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/WmHw"
+        android:layout_marginLeft="@dimen/ds_little"
+        android:layout_marginTop="@dimen/ds_little"
+        android:text="请输入要设置的终端名"
+        android:textColor="@color/col_white"
+        android:textSize="@dimen/ds_content_title_tx_size" />
+
+    <EditText
+        android:id="@+id/id_et_terminal_name"
+        style="@style/WmHw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/normal_et_bg_selector"
+        android:padding="@dimen/ds_little"
+        android:hint="新的名字"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/col_content_title"
+        android:textColor="@color/col_white"
+        android:ellipsize="start"
+        android:focusable="true"
+        android:nextFocusDown="@id/id_server_ip_ok"
+        android:nextFocusUp="@id/id_server_ip_ok"
+        android:textSize="@dimen/ds_text_normal_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/id_server_ip_ok"
+        style="@style/WwHw"
+        android:layout_gravity="right"
+        android:padding="@dimen/ds_little"
+        android:layout_margin="@dimen/ds_little"
+        android:background="@drawable/normal_bt_selector"
+        android:text="保存"
+        android:nextFocusDown="@id/id_et_terminal_name"
+        android:nextFocusUp="@id/id_et_terminal_name"
+        android:textSize="@dimen/ds_normal_text_size"
+        android:textColor="@drawable/text_col_selector"/>
+</LinearLayout>

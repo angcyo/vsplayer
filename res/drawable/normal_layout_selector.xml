@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <stroke android:width="@dimen/ds_border_size" android:color="@color/col_border_focus"></stroke>
+            <solid android:color="@color/col_view_bg_focus"/>
+        </shape>
+    </item>
+    <item android:drawable="@color/col_content_bg_x"/>
+</selector>
